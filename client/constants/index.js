@@ -34,7 +34,8 @@ export const categories = [
 export const featured = [
     {
         id: 1,
-        name: 'Papa Johns  Pizza',
+        name: 'Papa Johns Pizza',
+        name1:'Dilshan',
         image: require('../assets/images/pizzaIcon.png'),
         description: 'Hot and spicy pizzas',
         lng: 38.2145602,
@@ -43,6 +44,7 @@ export const featured = [
         stars: 4,
         reviews: '4.4k',
         category: 'Fast Food',
+        
         dishes: [
             {
                 id: 1,
@@ -54,6 +56,7 @@ export const featured = [
                 image: require('../assets/images/1.jpg'),
                 category: 'Italian',
                 location: 'Beachside, Hambantota',
+                
                 dishes: [
                   {
                     id: 1,
