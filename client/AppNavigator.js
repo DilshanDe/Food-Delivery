@@ -4,6 +4,8 @@ import { createStackNavigator } from '@react-navigation/stack';
 import HomeScreen from './screens/HomeScreen';
 import RestaurantScreen from './screens/RestaurantScreen';
 import CartScreen from './screens/CartScreen';
+import OrderPreparing from './screens/OrderPreparingScreen';
+import DeliveryScreen from './screens/DeliveryScreen';
 
 const Stack = createStackNavigator();
 
@@ -28,6 +30,22 @@ function AppNavigator() {
             presentation: 'modal' 
           }}
           component={CartScreen}
+        />
+        <Stack.Screen
+          name="OrderPreparing"
+          options={{ 
+            headerShown: false,
+            presentation: 'fullScreenModal' 
+          }}
+          component={OrderPreparing}
+        />
+        <Stack.Screen
+          name="Delivery"
+          options={{ 
+            headerShown: false,
+            presentation: 'fullScreenModal' 
+          }}
+          component={DeliveryScreen}
         />
       </Stack.Navigator>
     </NavigationContainer>
